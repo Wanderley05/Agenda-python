@@ -1,0 +1,79 @@
+:root {
+  --verde: #1E7B4B;
+  --vermelho: #C0392B;
+  --azul: #2E6DA4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CONTAINER */
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GRUPOS */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  transition: 0.3s;
+}
+
+/* ESTADOS */
+input.success {
+  border-color: var(--verde);
+  background: #f0fff4;
+}
+
+input.error {
+  border-color: var(--vermelho);
+  background: #fff5f5;
+}
+
+/* MENSAGENS */
+.msg {
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* TEXTO */
+.msg.success {
+  color: var(--verde);
+}
+
+.msg.error {
+  color: var(--vermelho);
+}
+
+/* BOTÃO */
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--azul);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
