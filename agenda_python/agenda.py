@@ -78,7 +78,6 @@ def deletar_contato():
     except:
         print("❌ Índice inválido.")
 
-# LOOP PRINCIPAL
 while True:
     mostrar_menu()
     opcao = input("Escolha: ")
